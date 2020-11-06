@@ -65,8 +65,8 @@ with the mechanisms for doing so.
 
 Above 32, there are two distinct blocks of roughly equivalent
 access times:
-    128-1024:  ~0.0014
-    2048-4096: ~0.0063
+| 128-1024 |  ~0.0014 |
+| 2048-4096 | ~0.0063 |
 
 It seems that there is a small primary TLB that can hold 16 pages,
 and a secondary TLB that holds up to 1024 pages.
