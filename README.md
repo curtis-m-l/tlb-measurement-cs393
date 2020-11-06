@@ -8,7 +8,7 @@ low values (1, 8, etc...) require a ton of iterations to produce
 stable results, while high values, (near 2048) become detrimentally
 slow at trial counts over 10,000.
 
-## RESULTS:
+## Results:
 | Pages: | Access Time (us): |
 |--------|-------------------|
 | 1 | 0.000711 |
