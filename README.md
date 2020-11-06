@@ -9,20 +9,21 @@ stable results, while high values, (near 2048) become detrimentally
 slow at trial counts over 10,000.
 
 RESULTS: (us)
-Pages: || Average Access Time (us):
-1 || 0.000711
-2 || 0.000531
-4 || 0.000635
-8 || 0.000398
-16 || 0.000382
-32 || 0.000650
-64 || 0.001022
-128 || 0.001460
-256 || 0.001439
-512 || 0.001440
-1024 || 0.001442
-2048 || 0.006352
-4096 || 0.006267
+| Pages: | Access Time (us): |
+|--------|-------------------|
+| 1 | 0.000711 |
+| 2 | 0.000531 |
+| 4 | 0.000635 |
+| 8 | 0.000398 |
+| 16 | 0.000382 |
+| 32 | 0.000650 |
+| 64 | 0.001022 |
+| 128 | 0.001460 |
+| 256 | 0.001439 |
+| 512 | 0.001440 |
+| 1024 | 0.001442 |
+| 2048 | 0.006352 |
+| 4096 | 0.006267 |
 
 The above results are directly pulled from the terminal and have 
 not been rounded. Additional tests (5 as of the last changes to 
