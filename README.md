@@ -1,5 +1,5 @@
-Maxx Curtis - TLB measurment program
-Operating Systems - CSCI 393 Fall Semester - Reed College
+# Maxx Curtis - TLB measurment program
+# Operating Systems - CSCI 393 Fall Semester - Reed College
 
 The bash script I used to measure my results in included in this zip
 file as "tlb.sh".
