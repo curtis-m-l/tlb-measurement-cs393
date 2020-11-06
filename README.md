@@ -72,3 +72,4 @@ access times:
 
 It seems that there is a small primary TLB that can hold 16 pages,
 and a secondary TLB that holds up to 1024 pages.
+(16 being the highest stablly-low value, and 1024 being the highest value in its bracket)
