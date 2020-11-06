@@ -25,7 +25,8 @@ slow at trial counts over 10,000.
 | 2048 | 0.006352 |
 | 4096 | 0.006267 |
 
-![](tbl.png)
+![](tlb.png)
+
 
 The above results are directly pulled from the terminal and have 
 not been rounded. Additional tests (5 as of the last changes to 
