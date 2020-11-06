@@ -8,6 +8,17 @@ low values (1, 8, etc...) require a ton of iterations to produce
 stable results, while high values, (near 2048) become detrimentally
 slow at trial counts over 10,000.
 
+When determining the number of trials for a given page count, I
+started at 10,000,000, and reduced the number for each value
+until the runtime became bearable to run. Afterward, several
+iterations confirmed that the values were stable.
+
+To ensure the compiler included each access, the values in the
+array are determined pseudo-randomly at runtime, and the values
+received from the array are summed and printed.
+
+
+
 ## Results:
 | Pages: | Access Time (us): |
 |--------|-------------------|
@@ -41,8 +52,16 @@ until NUMPAGES = 32, when the access time takes a noticable leap.
 
 When NUMPAGES = 32 or 64, the average access time is notably distinct
 from the times above and below, which may suggest that the TLB
-is having some effect, but without knowing my TLBs eviction policy,
-it's difficult to speculate on why that might be.
+is having some effect. This inconsistentcy could be due to the working
+set being larger than the primary tlb of a single CPU, but smaller than
+the total primary tlb space on all cpus together. If the process were
+swapped to different CPUs, it may find some values still in the new CPU
+tlb, but if it remains on one CPU for a long while, it may begin 
+missing consistently.
+
+As far as I'm aware, the main thread of the process should be bound
+randomly to a single cpu on the machine, but admittedly I'm unfamiliar
+with the mechanisms for doing so.
 
 Above 32, there are two distinct blocks of roughly equivalent
 access times:
