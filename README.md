@@ -8,7 +8,7 @@ low values (1, 8, etc...) require a ton of iterations to produce
 stable results, while high values, (near 2048) become detrimentally
 slow at trial counts over 10,000.
 
-RESULTS: (us)
+## RESULTS:
 | Pages: | Access Time (us): |
 |--------|-------------------|
 | 1 | 0.000711 |
@@ -24,7 +24,7 @@ RESULTS: (us)
 | 1024 | 0.001442 |
 | 2048 | 0.006352 |
 | 4096 | 0.006267 |
-
+![](tbl.png)
 The above results are directly pulled from the terminal and have 
 not been rounded. Additional tests (5 as of the last changes to 
 the trial counts) were run to ensure the results are accurate to 
