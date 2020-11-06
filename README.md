@@ -20,7 +20,7 @@ received from the array are summed and printed.
 
 
 ## Results:
-| Pages: | Access Time (us): |
+| Pages | Access Time (us) |
 |--------|-------------------|
 | 1 | 0.000711 |
 | 2 | 0.000531 |
@@ -65,6 +65,8 @@ with the mechanisms for doing so.
 
 Above 32, there are two distinct blocks of roughly equivalent
 access times:
+| Pages | Access Time |
+|-------|-------------|
 | 128-1024 |  ~0.0014 |
 | 2048-4096 | ~0.0063 |
 
